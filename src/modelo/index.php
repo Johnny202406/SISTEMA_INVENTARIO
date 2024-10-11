@@ -5,7 +5,7 @@ class Modelo{
     private $datos;    
     public function __construct(){
         $this->Modelo = array();
-        $this->db = new PDO('mysql:host=localhost;dbname=sistema_inventario',"root","");
+        $this->db = new PDO('mysql:host=fra1.clusters.zeabur.com;dbname=sistema_inventario',"root","9IEC82b0flPTi4hY6g715s3QrRjaowJc");
     }
     public function insertar($tabla, $data){
         $consulta="insert into ".$tabla." values(null,". $data .")";
